@@ -61,6 +61,7 @@ public class AuthenticationController {
     adherent.setCin(cin);
     adherent.setNumeroTelephone(numeroTelephone);
     adherent.setDateNaissance(dateNaissance);
+    adherent.setVerified(false);
     adherent.setRole(Role.ADHERENT);
     String originalFilename = file.getOriginalFilename();
     String uniqueFilename = UUID.randomUUID().toString() + "_" + originalFilename;
